@@ -3,6 +3,11 @@
 % text
 \newcommand{\documentname}{\textsl{Article}}
 \newcommand{\sectionname}{Section}
+\newcommand{\project}[1]{\textsl{#1}}
+\newcommand{\acronym}[1]{{\small{#1}}}
+\newcommand{\APOGEE}{\project{\acronym{APOGEE}}}
+\newcommand{\HARPS}{\project{\acronym{HARPS}}}
+\newcommand{\MIKE}{\project{\acronym{MIKE}}}
 
 % math
 \newcommand{\given}{\,|\,}
@@ -11,9 +16,43 @@
 \begin{document}\sloppy\sloppypar\raggedbottom\frenchspacing
 
 \title{What is the dimensionality of element-abundance space?}
+\author{MB}
+\author{DWH}
 
 \begin{abstract}
-foo and bar.
+%Context
+The concept of chemical tagging is predicated on a (near future) capability
+of identifying (at least probabilistically) co-eval stars by particular
+element-abundance patterns.
+At the same time, the finite number of nucleosynthetic pathways (and secondary
+processes for modifying abundances) suggests that the diversity in
+element-abundance space might be limited, especially in dimensionality.
+It is critical to understand this diversity, and also how precisely
+we can discriminate similar and dissimilar pairs of stars in realistic data.
+%Aims
+Here we look at the dimensionality of abundance space in three different
+samples: A small set of extremely precisely (and differentially) measured
+Solar Twins measured by \HARPS\ and \MIKE,
+an even smaller set of star clusters measured by \APOGEE\ (and something?),
+and a large set of red-clump (RC) stars measured by \APOGEE.
+Any dimensionality reduction also, in its tangent space, delivers an empirical
+test of any claimed measurement precision.
+%Methods
+We look at dimensionality and discrimination by two different methods.
+In one, we perform principal components analysis and look at the number of
+components that show excess scatter over noise, for different assumptions about
+measurement noise.
+In the other, we look at how one element abundance can be predicted from combinations
+of other element abundances.
+%Results
+We find that there are only 4 to 15 dimensions or eigen-directions with
+non-zero variance in the abundance space of the Solar Twins,
+which have 30 elements precisely measured, but which are only sensitive to disk
+stars that have radially migrated to the Solar neighborhood.
+We find XXX dimensions for the \APOGEE\ RC abundances, which are measured
+all over the Galaxy but in a smaller set of elements.
+We confirm measuremeent uncertainties in the YYY-dex range for the Solar Twins,
+ZZZ-dex for the star clusters, and WWW-dex for the RC stars.
 \end{abstract}
 
 \section{Introduction}
